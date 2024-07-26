@@ -1,9 +1,9 @@
 {
-  "publisher": "lokalise",
+  "publisher": "Emiya",
   "name": "i18n-ally",
   "version": "2.12.0",
-  "displayName": "i18n Ally",
-  "description": "🌍 All in one i18n extension for VS Code",
+  "displayName": "i18n Ally (Support chinese key)",
+  "description": "🌍 A fork of i18n-ally for support chinese key",
   "keywords": [
     "vue",
     "vue-i18n",
