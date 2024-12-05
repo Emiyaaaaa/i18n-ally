@@ -1,9 +1,9 @@
 {
-  "publisher": "lokalise",
-  "name": "i18n-ally",
-  "version": "2.13.1",
-  "displayName": "i18n Ally",
-  "description": "🌍 All in one i18n extension for VS Code",
+  "publisher": "Emiya",
+  "name": "i18n-ally-chinese-key",
+  "version": "2.13.2",
+  "displayName": "i18n Ally (Support chinese key)",
+  "description": "🌍 A fork of i18n-ally for support chinese key",
   "keywords": [
     "vue",
     "vue-i18n",
@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/lokalise/i18n-ally"
+    "url": "https://github.com/amiyaaaaa/i18n-ally"
   },
   "main": "./dist/extension",
   "scripts": {
@@ -21,7 +21,7 @@
     "release:minor": "standard-version --release-as minor && git push --follow-tags",
     "release:patch": "standard-version --release-as patch && git push --follow-tags",
     "gh:release": "conventional-github-releaser -p angular",
-    "build": "rimraf dist && nr i18n:build && nr main:build && nr editor:build && esno scripts/post-build.ts",
+    "build": "rimraf dist && nr i18n:build && nr main:build && nr editor:build && esno scripts/post-build.ts && vsce package",
     "dev": "run-p *:dev",
     "main:build": "cross-env I18N_ALLY_ENV=production webpack --mode development",
     "main:dev": "cross-env I18N_ALLY_ENV=development webpack --mode development --watch --info-verbosity verbose",
@@ -168,8 +168,8 @@
     "onLanguage:svelte"
   ],
   "icon": "res/logo.png",
-  "homepage": "https://github.com/lokalise/i18n-ally",
-  "bugs": "https://github.com/lokalise/i18n-ally/issues",
+  "homepage": "https://github.com/emiyaaaaa/i18n-ally",
+  "bugs": "https://github.com/emiyaaaaa/i18n-ally/issues",
   "contributes": {
     "commands": [
       {

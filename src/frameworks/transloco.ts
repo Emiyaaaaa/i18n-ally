@@ -40,7 +40,7 @@ export default class TranslocoFramework extends Framework {
 
   rewriteKeys(key: string) {
     // find extra scope
-    const regex = /[\'"`]([\w.]+)[\'"`]/gm
+    const regex = /[\'"`]([\w\u4E00-\u9FA5.]+)[\'"`]/gm
     let index = 0
     let match, actualKey, scope
 

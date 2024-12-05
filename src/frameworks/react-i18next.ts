@@ -129,7 +129,7 @@ class ReactI18nextFramework extends Framework {
     // Namespaced prefixed keys already handled by rewriteKeys
 
     // t('foo', { ns: 'ns1' })
-    const regT = /\Wt\([^)]*?ns:\s*['"`](\w+)['"`]/g
+    const regT = /\Wt\([^)]*?ns:\s*['"`]([\w\u4E00-\u9FA5]+)['"`]/g
 
     for (const match of text.matchAll(regT)) {
       if (typeof match.index !== 'number')

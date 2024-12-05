@@ -239,7 +239,7 @@ export abstract class Loader extends Disposable {
 
       let text = JSON
         .stringify(value, null, stringifySpace)
-        .replace(/"(\w+?)":/g, ' $1:')
+        .replace(/"([\w\u4E00-\u9FA5]+?)":/g, ' $1:')
         .replace(/}/, ' }')
 
       if (maxlength && text.length > maxlength) {

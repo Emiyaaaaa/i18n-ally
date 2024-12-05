@@ -35,7 +35,7 @@ class UI5Framework extends Framework {
   }
 
   rewriteKeys(key: string) {
-    const regexI8n = /i18n>([\w\d\-.]*)/gm
+    const regexI8n = /i18n>([\w\d\u4E00-\u9FA5\-.]*)/gm
     const matches = regexI8n.exec(key)
     if (matches && matches.length > 1)
       key = matches[1]

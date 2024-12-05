@@ -6,7 +6,7 @@ export const EXT_REVIEW_ID = 'i18n-ally-review'
 
 export const EXT_LEGACY_NAMESPACE = 'vue-i18n-ally'
 
-export const KEY_REG_DEFAULT = '[\\w\\d\\. \\-\\[\\]\\/:]*?'
+export const KEY_REG_DEFAULT = '[\\w\\d\\u4E00-\\u9FA5\\. \\-\\[\\]\\/:]*?'
 export const KEY_REG_ALL = '.*?'
 
 export const QUOTE_SYMBOLS = '\'"`'
@@ -14,7 +14,7 @@ export const QUOTE_SYMBOLS = '\'"`'
 export const THROTTLE_DELAY = 800
 export const FILEWATCHER_TIMEOUT = 100
 
-export const linkKeyMatcher = /(?:@(?:\.[a-z]+)?:(?:[\w\-_|.]+|\([\w\-_|.]+\)))/g
+export const linkKeyMatcher = /(?:@(?:\.[a-z]+)?:(?:[\w\u4E00-\u9FA5\-_|.]+|\([\w\u4E00-\u9FA5\-_|.]+\)))/g
 export const linkKeyPrefixMatcher = /^@(?:\.([a-z]+))?:/
 export const bracketsMatcher = /[()]/g
 export const linkedKeyModifiers = {
@@ -30,5 +30,5 @@ export const DEFAULT_LOCALE_COUNTRY_MAP = {
   ja: 'ja',
   es: 'es',
   vi: 'vn',
-  lb: 'lu'
+  lb: 'lu',
 }
